@@ -1,3 +1,5 @@
+https://www.figma.com/file/X0xu3aCyojbfYgFAx9R80SIB/Коршун-адаптив?node-id=5%3A388
+
 # Требования к верстке
 
 ## Общая концепция
