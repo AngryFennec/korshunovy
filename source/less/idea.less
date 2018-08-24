@@ -1,15 +1,29 @@
 .idea {
   width: 320px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: @Exo2;
 }
 .idea__block {
   width: 280px;
   margin: 0 auto;
-  background: url(../images/)
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9px;
+
+  &--1 {
+    background: url(../images/idea_mob_1.jpg) no-repeat 0 50px;
+  }
+
+  &--2 {
+    background: url(../images/idea_mob_2.jpg) no-repeat 0 51px;
+  }
 }
 
 .idea__button {
-  margin: 0 auto;
+  margin-left: 23px;
+  margin-bottom: 31px;
 }
 
 .idea__block--1 .idea__description-block {
@@ -20,3 +34,64 @@
   background-color: rgba(0, 0, 0, 0.45);
 }
 
+.idea__caption {
+  margin-top: 11px;
+  margin-bottom: 0;
+  line-height: 19px;
+  font-size: 16px;
+  font-family: @Exo2semi;
+  color: #ffffff;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;	border-top: 10px solid #ff6108; border-right: 10px solid #ff6108;
+    bottom: -13px;
+    left: 7px;
+  }
+}
+
+.idea__block--1 .idea__caption {
+  background-color: #ff6108;
+  padding: 9px 17px 13px 17px;
+}
+
+.idea__block--2 .idea__caption {
+  background-color: #2e2e2e;
+  padding: 20px 10px 21px 12px;
+  width: 160px;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    border: 10px solid transparent;	border-top: 10px solid #2e2e2e; border-right: 10px solid #2e2e2e;
+    bottom: -13px;
+    left: 18px;
+  }
+}
+
+.idea__header {
+  margin: 0;
+}
+
+.idea__description {
+  font-size: 20px;
+  line-height: 29px;
+  padding: 41px 20px 8px 20px;
+  font-weight: 500;
+  margin: 0;
+
+  & span {
+    font-family: @Exo2semi;
+  }
+}
+
+.idea__block--2 .idea__description-block {
+  margin-top: -20px;
+}
+
+.idea__block--2 .idea__description {
+  padding-top: 61px;
+  color: #ffffff;
+}
