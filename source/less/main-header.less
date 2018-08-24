@@ -5,13 +5,43 @@
   background-repeat: no-repeat;
   text-align: center;
   color: @white;
+  position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 62px;
+    background-image: url("../images/header-rect.svg");
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 220px;
+    z-index: 1;
+  }
 }
 
-.main-header__title {
+.main-header__text {
+  z-index: 5;
   font-family: @main-font;
-  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 auto;
+
+  &--upper {
+    text-transform: uppercase;
+  }
+  
+  .main-header__suggest {
+    color: @link-yellow;
+  }
+}
+
+
+.main-header__title {
+  font-family: @main-font-semi;
   font-size: 15px;
   line-height: 18px;
   text-transform: uppercase;
+  padding-top: 45px;
 }
