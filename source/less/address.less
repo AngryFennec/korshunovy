@@ -1,0 +1,105 @@
+.address {
+  width: 320px;
+  margin: 0 auto;
+  font-family: @main-font;
+  color: @dark;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  .flex-block();
+  .flex-direction(@direction: column);
+  .justify-content(flex-start);
+}
+
+.address__container {
+  margin: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 21px;
+  padding-bottom: 29px;
+  border-top: 5.4px solid @green;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.address__logo {
+  margin-left: -6px;
+}
+
+.address__social {
+  margin-top: 10px;
+  margin-left: -10px;
+  .flex-block();
+  .justify-content(flex-start);
+  margin-bottom: 8px;
+}
+
+.address__block {
+  .flex-block();
+}
+
+.address__location {
+  margin-bottom: 20px;
+}
+
+.address__phone {
+  margin-bottom: 12px;
+}
+
+.address__mail {
+  margin-bottom: 16px;
+}
+
+.address__info {
+  padding-left: 22px;
+}
+
+.address__location-icon {
+  margin-right: 12px;
+}
+
+.address__phone-icon {
+  margin-right: 12px;
+}
+
+.address__mail-icon {
+  margin-right: 10px;
+}
+
+.address__phone-link {
+  font-family: @main-font-semi;
+  color: @dark;
+}
+
+.address__mail-link {
+  color: @dark;
+}
+
+.address__info {
+  margin-bottom: 17px;
+}
+
+.address__politics {
+  padding-left: 22px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: @dark;
+  text-decoration: underline;
+
+}
+
+@media (min-width: @tablet-width) {
+  .address__container {
+    position: absolute;
+    top: 0;
+    left: 205px;
+    min-height: 340px;
+    width: 280px;
+  }
+
+  .address {
+    width: @tablet-width;
+    margin: 0 auto;
+}
+}
