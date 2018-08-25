@@ -16,7 +16,7 @@
 @media (min-width: @tablet-width) {
   .map {
     min-height: 499px;
-    background-image: url("../images/map-back-tab.jpg");
+    background-image: url("../images/map-back-tab.png");
     background-repeat: no-repeat;
     position: relative;
     margin: 0 auto;
@@ -28,5 +28,24 @@
     top: 172px;
     left: auto;
     right: 28px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .map {
+    min-height: 782px;
+    background-image: url("../images/map-back-desk.png");
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+    width: @desktop-width;
+  }
+
+  .map__icon {
+    position: absolute;
+    top: 313px;
+    left: auto;
+    right: 734px;
   }
 }
