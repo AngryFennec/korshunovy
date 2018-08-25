@@ -1,0 +1,87 @@
+.range__track {
+  width: 280px;
+  height: 5px;
+  background-color: #E9EEF2;
+}
+
+.range__before {
+  width: 50%;
+  background-color: #F79A0C;
+  height: 5px;
+}
+
+.range__toogle-block {
+  position: absolute;
+  top: 15px;
+  left: 48%;
+  z-index: 1;
+}
+.range__toogle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #F79A0C;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.range__toggle-center {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #E9EEF2;
+  position: absolute;
+  z-index: 2;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
+.range {
+  position: relative;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 18px;
+
+}
+
+.range__start {
+  display: inline-block;
+  margin-top: 6px;
+  margin-bottom: 3px;
+}
+
+.range__end {
+  margin-left: 242px;
+}
+
+.range__current {
+  position: absolute;
+  top: -5px;
+  left: 48%;
+  padding-left: 7px;
+}
+
+@media (min-width: 768px) {
+  .range {
+    margin-top: 16px;
+    margin-bottom: 52px;
+  }
+
+  .range__track {
+    width: 580px;
+    margin-left: 0;
+  }
+
+  .range__end {
+    margin-left: 540px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .range {
+    margin-bottom: 43px;
+  }
+}
