@@ -9,11 +9,38 @@
     <link href="styles/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <article class="head">
-      <button class="menu__btn">
-        <svg class="menu__btn-icon" width="33" height="27"><use xlink:href="icons/sprite.svg#burger"></use></svg>
+
+    <header class="page-header">
+      <h1 class="page-header__title visually-hidden">Студия натяжных потолков</h1>
+      <nav class="page-navigation">
+        <div class="nav-container">
+        <ul class="menu">
+          <li class="menu__item"><a href=#>Стоимость</a></li>
+          <li class="menu__item"><a href=#>Портфолио</a></li>
+          <li class="menu__item"><a href=#>Возможности</a></li>
+          <li class="menu__item"><a href=#>Есть идея?</a></li>
+          <li class="menu__item"><a href=#>Контакты</a></li>
+        </ul>
+        <div class="menu__outer">
+          <a class="menu__outer-link" href=tel:+79035678900>+7 (903)-567-89-00</a>
+          <a class="menu__outer-btn button button--color">Обратный звонок</a>
+        </div>
+      </div>
+      </nav>
+      <button class="menu__btn menu-button">
+        <span class="menu-button__text">Меню</span>
       </button>
-      <img class="head__logo" src="./images/logo.svg" height=40 width=125.56 alt="Логотип">
-    </article>
+      <article class="head">
+        <picture class="head__logo">
+          <source media="(min-width: 1920px)" srcset="images/logo-desk.svg">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img src="images/logo.svg" alt="Логотип">
+        </picture>
+        <p class="head__text">Установка натяжных потолков в Москве и московской области</p>
+
+      </article>
+    </header>
+
+  <script src="script/main.js"></script>
   </body>
 </html>
