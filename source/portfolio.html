@@ -11,6 +11,7 @@
   <body class="page">
     <section class="price">
       <form class="price__form" action="" method="post">
+        <img class="price__image" src="images/price_desk.jpg" width="400px" height="400px" alt="">
         <div class="price__area">
           <label class="price__legend" for="area">Площадь комнаты</label>
           <input class="price__range"type="range" name="area" id="area">
@@ -125,26 +126,27 @@
       </form>
     </section>
     <section class="portfolio">
-
+      <div class="portfolio__main-wrapper">
+        <h2 class="portfolio__header h2">Портфолио</h2>
         <div class="portfolio__block portfolio__block--1">
           <picture class="portfolio__image portfolio__image--1">
-            <source media="(min-width: 1200px)" srcset="images/port_desk_1.jpg">
+            <source media="(min-width: 1920px)" srcset="images/port_desk_1.jpg">
             <source media="(min-width: 768px)" srcset="images/port_tab_1.jpg">
             <img class="portfolio__image portfolio__image--1" src="images/port_mob_1.jpg" alt="">
           </picture>
           <picture>
-            <source media="(min-width: 1200px)" srcset="images/port_desk_2.jpg">
+            <source media="(min-width: 1920px)" srcset="images/port_desk_2.jpg">
             <source media="(min-width: 768px)" srcset="images/port_tab_2.jpg">
             <img class="portfolio__image portfolio__image--2" src="images/port_mob_2.jpg" alt="">
           </picture>
           <div class="portfolio__wrapper portfolio__wrapper--1">
             <picture class="portfolio__image portfolio__image--3">
-              <source media="(min-width: 1200px)" srcset="images/port_desk_3.jpg">
+              <source media="(min-width: 1920px)" srcset="images/port_desk_3.jpg">
               <source media="(min-width: 768px)" srcset="images/port_tab_3.jpg">
               <img src="images/port_mob_3.jpg" alt="">
             </picture>
             <picture class="portfolio__image portfolio__image--4">
-              <source media="(min-width: 1200px)" srcset="images/port_desk_4.jpg">
+              <source media="(min-width: 1920px)" srcset="images/port_desk_4.jpg">
               <source media="(min-width: 768px)" srcset="images/port_tab_4.jpg">
               <img src="images/port_mob_4.jpg" alt="">
             </picture>
@@ -153,33 +155,34 @@
         <div class="portfolio__block portfolio__block--2">
           <div class="portfolio__wrapper portfolio__wrapper--2">
             <picture class="portfolio__image none portfolio__image--5">
-              <source media="(min-width: 1200px)" srcset="images/port_desk_5.jpg">
+              <source media="(min-width: 1920px)" srcset="images/port_desk_5.jpg">
               <source media="(min-width: 768px)" srcset="images/port_tab_5.jpg">
               <img src="" alt="">
             </picture>
             <picture class="portfolio__image portfolio__image--6">
-              <source media="(min-width: 1200px)" srcset="images/port_desk_6.jpg">
+              <source media="(min-width: 1920px)" srcset="images/port_desk_6.jpg">
               <source media="(min-width: 768px)" srcset="images/port_tab_6.jpg">
               <img src="images/port_mob_5.jpg" alt="">
             </picture>
           </div>
           <picture class="portfolio__image none portfolio__image--7">
-            <source media="(min-width: 1200px)" srcset="images/port_desk_7.jpg">
+            <source media="(min-width: 1920px)" srcset="images/port_desk_7.jpg">
             <source media="(min-width: 768px)" srcset="images/port_tab_7.jpg">
             <img src="" alt="">
           </picture>
           <picture class="portfolio__image none portfolio__image--8">
-            <source media="(min-width: 1200px)" srcset="images/port_desk_8.jpg">
+            <source media="(min-width: 1920px)" srcset="images/port_desk_8.jpg">
             <source media="(min-width: 768px)" srcset="images/port_tab_8.jpg">
             <img src="" alt="">
           </picture>
         </div>
 
       <a href="" class="portfolio__button">Показать еще</a>
+    </div>
     </section>
     <section class="about-us">
       <picture class="about-us__image">
-        <source media="(min-width: 1200px)" srcset="images/about_desk.jpg">
+        <source media="(min-width: 1920px)" srcset="images/about_desk.jpg">
         <source media="(min-width: 768px)" srcset="images/about_tab.jpg">
         <img src="images/about_mob.jpg" alt="">
       </picture>
@@ -189,11 +192,13 @@
       <p class="about-us__content">Наши мастера изготовят потолки по индивидуальным размерам и любой конфигурации помещения. Экологичность используемых материалов подтверждена сертификатами качества и соответствия. В цену на установку потолков включена стоимость работ и всех материалов.</p>
       <p class="about-us__content">Экологичность используемых материалов подтверждена сертификатами качества и соответствия. В цену на установку потолков включена стоимость работ и всех материалов.</p>
     </section>
+
+
     <section class="idea">
       <h2 class="idea__header h2">Есть идея?</h2>
       <div class="idea__block idea__block--1">
         <p class="idea__caption">
-          Воплотите вашу идею в жизнь<br> с компнаией “Коршун”
+          Воплотите вашу идею в жизнь<br> с компанией “Коршун”
         </p>
         <div class="idea__description-block">
           <p class="idea__description">Просто <span>объясните нам</span>, чего Вы хотите, и мы разработаем <span>грамотное решение</span> воплощения Вашей идеи!</p>

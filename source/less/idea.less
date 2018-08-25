@@ -103,7 +103,6 @@
     width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
-    outline: 1px solid skyblue;
   }
 
   .idea__header {
@@ -167,5 +166,81 @@
 
 
     }
+  }
+}
+
+@media (min-width: 1920px) {
+  .idea {
+    width: 1180px;
+  }
+
+  .idea__block {
+    width: 590px;
+
+    &--1 {
+      background: url(../images/idea_desk_1.jpg) no-repeat 0 39px;
+    }
+
+    &--2 {
+      margin-top: 29px;
+      background: url(../images/idea_desk_2.jpg) no-repeat 0 50px;
+
+    }
+  }
+
+  .idea__header {
+    width: 1920px;
+    margin-bottom: 13px;
+
+  }
+
+  .idea__description-block {
+    min-height: 477px;
+  }
+
+  .idea__block--2 .idea__description-block {
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .idea__block--1 .idea__description-block {
+    margin-top: 0;
+
+  }
+
+  .idea__block--1 .idea__caption {
+    width: 450px;
+    margin-left: auto;
+    margin-top: 0;
+    padding-left: 20px;
+
+    & br {
+      display: none;
+    }
+  }
+
+  .idea__block--2 .idea__caption {
+    padding: 10px 10px 11px 12px;
+  }
+
+  .idea__block--1 .idea__description {
+
+    padding: 20px 80px 19px 140px;
+
+  }
+
+  .idea__block--2 .idea__description {
+
+    padding: 13px 200px 27px 20px;
+
+  }
+
+  .idea__button {
+    margin-left: 140px;
+    margin-bottom: 50px;
+  }
+
+  .idea__block--2 .idea__button {
+    margin-left: 20px;
   }
 }
