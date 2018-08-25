@@ -119,24 +119,70 @@
           <input class="price__checkbox visually-hidden" type="checkbox" name="all-rooms" id="all-rooms">
           <label class="price__label" for="all-rooms">Мне нужны натяжные потолки на всю квартиру</label>
         </div>
-        <label class="price__legend">Номер телефона</label>
+        <label class="price__legend price__legend--phone">Номер телефона</label>
         <input class="price__phone" type="text" placeholder="+7(___) ___-__-__">
        <button class="price__button button" type="submit">Рассчитать стоимость</button>
       </form>
     </section>
     <section class="portfolio">
-      <img class="portfolio__image" src="images/port_mob_1.jpg" alt="">
-      <img class="portfolio__image" src="images/port_mob_2.jpg" alt="">
-      <img class="portfolio__image" src="images/port_mob_3.jpg" alt="">
-      <img class="portfolio__image" src="images/port_mob_4.jpg" alt="">
-      <img class="portfolio__image" src="images/port_mob_5.jpg" alt="">
-      <img class="portfolio__image none" src="" alt="">
-      <img class="portfolio__image none" src="" alt="">
-      <img class="portfolio__image none" src="" alt="">
+
+        <div class="portfolio__block portfolio__block--1">
+          <picture class="portfolio__image portfolio__image--1">
+            <source media="(min-width: 1200px)" srcset="images/port_desk_1.jpg">
+            <source media="(min-width: 768px)" srcset="images/port_tab_1.jpg">
+            <img class="portfolio__image portfolio__image--1" src="images/port_mob_1.jpg" alt="">
+          </picture>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/port_desk_2.jpg">
+            <source media="(min-width: 768px)" srcset="images/port_tab_2.jpg">
+            <img class="portfolio__image portfolio__image--2" src="images/port_mob_2.jpg" alt="">
+          </picture>
+          <div class="portfolio__wrapper portfolio__wrapper--1">
+            <picture class="portfolio__image portfolio__image--3">
+              <source media="(min-width: 1200px)" srcset="images/port_desk_3.jpg">
+              <source media="(min-width: 768px)" srcset="images/port_tab_3.jpg">
+              <img src="images/port_mob_3.jpg" alt="">
+            </picture>
+            <picture class="portfolio__image portfolio__image--4">
+              <source media="(min-width: 1200px)" srcset="images/port_desk_4.jpg">
+              <source media="(min-width: 768px)" srcset="images/port_tab_4.jpg">
+              <img src="images/port_mob_4.jpg" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="portfolio__block portfolio__block--2">
+          <div class="portfolio__wrapper portfolio__wrapper--2">
+            <picture class="portfolio__image none portfolio__image--5">
+              <source media="(min-width: 1200px)" srcset="images/port_desk_5.jpg">
+              <source media="(min-width: 768px)" srcset="images/port_tab_5.jpg">
+              <img src="" alt="">
+            </picture>
+            <picture class="portfolio__image portfolio__image--6">
+              <source media="(min-width: 1200px)" srcset="images/port_desk_6.jpg">
+              <source media="(min-width: 768px)" srcset="images/port_tab_6.jpg">
+              <img src="images/port_mob_5.jpg" alt="">
+            </picture>
+          </div>
+          <picture class="portfolio__image none portfolio__image--7">
+            <source media="(min-width: 1200px)" srcset="images/port_desk_7.jpg">
+            <source media="(min-width: 768px)" srcset="images/port_tab_7.jpg">
+            <img src="" alt="">
+          </picture>
+          <picture class="portfolio__image none portfolio__image--8">
+            <source media="(min-width: 1200px)" srcset="images/port_desk_8.jpg">
+            <source media="(min-width: 768px)" srcset="images/port_tab_8.jpg">
+            <img src="" alt="">
+          </picture>
+        </div>
+
       <a href="" class="portfolio__button">Показать еще</a>
     </section>
     <section class="about-us">
-      <img src="images/about_mob.jpg" alt="" class="about-us__image">
+      <picture class="about-us__image">
+        <source media="(min-width: 1200px)" srcset="images/about_desk.jpg">
+        <source media="(min-width: 768px)" srcset="images/about_tab.jpg">
+        <img src="images/about_mob.jpg" alt="">
+      </picture>
       <h2 class="about-us__header h2">О нас</h2>
       <p class="about-us__description">Малый бизнес<br> с большим сердцем</p>
       <p class="about-us__content">Натяжные потолки – это быстрый и надежный способ исправить дефекты потолка в течении нескольких часов без пыли, грязи и строительного мусора.</p>

@@ -4,12 +4,41 @@
   padding-top: 10px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   background-color: #e9ebef;
   margin: 0 auto;
 }
 
+.portfolio__block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.portfolio__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .portfolio__image {
-  margin-bottom: 9px;
+  margin-bottom: 7px;
+  width: 300px;
+
+  &--1 {
+    height: 250px;
+  }
+  &--2 {
+    height: 250px;
+  }
+  &--3 {
+    height: 150px;
+  }
+  &--4 {
+    height: 250px;
+  }
+  &--6 {
+    height: 158px;
+  }
 }
 
 .portfolio__button {
@@ -29,4 +58,129 @@
 
 .none {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    width: 768px;
+    padding-top: 39px;
+  }
+
+  .none {
+    display: block;
+  }
+
+  .portfolio__block {
+    width: 620px;
+
+    &--2 {
+      margin-top: -86px;
+    }
+  }
+
+  .portfolio__wrapper--1 {
+    margin-left: 19px;
+  }
+
+  .portfolio__wrapper--2 {
+    margin-right: 19px;
+  }
+
+  .portfolio__image {
+    margin-bottom: 22px;
+
+    &--1 {
+      width: 620px;
+      height: 292px;
+    }
+    &--2 {
+      height: 342px;
+    }
+    &--3 {
+      height: 158px;
+    }
+    &--4 {
+      height: 245px;
+    }
+    &--5 {
+      height: 245px;
+    }
+    &--6 {
+      height: 158px;
+    }
+    &--7 {
+      margin-top: 84px;
+      height: 342px;
+    }
+    &--8 {
+      width: 620px;
+      height: 292px;
+    }
+  }
+
+  .portfolio__block--2 .portfolio__image:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .portfolio__button {
+    margin-top: 20px;
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .portfolio {
+    padding: 0;
+    width: 1180px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .portfolio__block {
+    width: 580px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .portfolio__block--2 {
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+
+  .portfolio__wrapper {
+    margin: 0;
+  }
+
+  .portfolio__image {
+    width: 280px;
+
+    &--1 {
+      width: 580px;
+      height: 274px;
+    }
+    &--2 {
+      height: 320px;
+    }
+    &--3 {
+      height: 148px;
+    }
+    &--4 {
+      height: 230px;
+    }
+    &--5 {
+      height: 230px;
+    }
+    &--6 {
+      height: 148px;
+    }
+    &--7 {
+      margin-top: 80px;
+      height: 320px;
+    }
+    &--8 {
+      width: 580px;
+      height: 274px;
+    }
+  }
 }
