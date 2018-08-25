@@ -1,10 +1,19 @@
 .ability {
   width: 320px;
   margin: 0 auto;
+  margin-top: -32px;
+  margin-bottom: 16px;
+}
+.ability__container {
+  width: 320px;
+  margin: 0 auto;
   .flex-block();
   .flex-direction(@direction: column);
   .justify-content(flex-start);
+}
 
+.ability__title {
+  margin-bottom: 11px;
 }
 
 .ability__first {
@@ -12,6 +21,12 @@
   .flex-direction(@direction: column);
   .justify-content(flex-start);
     padding: 0 20px;
+}
+
+.ability__text-container {
+  .flex-block();
+  .flex-direction(@direction: column);
+  .justify-content(flex-start);
 }
 
 .ability__second {
@@ -23,13 +38,14 @@
 
 .ability__photo-block {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: -6px;
 }
 
 .ability__green-btn {
   position: absolute;
   bottom: -5px;
-  right: -5px;
+  right: 0px;
+  padding-top: 19px;
 }
 
 .ability__anno-text {
@@ -40,18 +56,23 @@
 }
 
 .ability__orange-btn {
+  margin-top: -7px;
   margin-bottom: 20px;
 }
 
 .ability__photo2 {
   margin-bottom: 10px;
+  width: 281;
+  height: 251;
 }
+
 .ability__mini-header {
   font-family: @main-font-semi;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
   text-transform: none;
+  margin-bottom: -6px;
 }
 
 .ability__text {
@@ -59,4 +80,175 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
+  margin-bottom: 2px;
+}
+
+.ability__text-container2 {
+  margin-top: -5px;
+
+  .ability__text {
+    margin-top: 10px;
+
+    &:last-child {
+      margin-top: 23px;
+
+    }
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .ability {
+    width: @tablet-width;
+    padding-top: 2px;
+  }
+
+  .ability__container {
+    width: @tablet-width;
+  }
+
+  .ability__title {
+    padding-left: 74px;
+    margin-bottom: 22px;
+  }
+
+  .ability__first {
+    .flex-block();
+    .flex-direction(@direction: row);
+    .justify-content(flex-start);
+    padding: 0 75px;
+  }
+
+  .ability__green-btn {
+    position: absolute;
+    bottom: 15px;
+    right: -8px;
+    padding-top: 20px;
+  }
+
+  .ability__photo1 {
+    width: 271px;
+    height: 231px;
+  }
+
+  .ability__photo-block {
+    margin-right: 28px;
+  }
+
+  .ability__anno-text {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 40px;
+    margin-top: -9px;
+  }
+
+  .ability__orange-btn {
+    margin-top: 6px;
+  }
+
+  .ability__photo2 {
+    order: 5;
+    width: 300px;
+    height: 266px;
+    padding-top: 30px;
+
+  }
+
+  .ability__second {
+    .flex-block();
+    .flex-direction(@direction: row);
+    .justify-content(flex-start);
+    padding: 0 75px;
+    margin-top: 20px;
+  }
+
+  .ability__mini-header {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-bottom: -7px;
+  }
+
+  .ability__text-container2 {
+    padding-right: 20px;
+
+    .ability__text {
+      margin-top: 10px;
+
+      &:last-child {
+        margin-top: 21px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .ability {
+    width: @desktop-width;
+    margin: 0 auto;
+  }
+
+  .ability__container {
+    width: 1200px;
+    .flex-direction(@direction: row);
+  }
+
+  .ability__title {
+      font-size: 40px;
+      line-height: 48px;
+      padding-left: 700px;
+    }
+
+  .ability__photo1 {
+    width: 579px;
+    height: 423px;
+    margin-left: -62px;
+  }
+  .ability__first {
+    .flex-direction(@direction: column);
+    padding-right: 0;
+  }
+
+  .ability__green-btn {
+    position: absolute;
+    bottom: -105px;
+    right: 2px;
+    padding-top: 20px;
+  }
+
+  .ability__text-container {
+    margin-top: 30px;
+    margin-left: -65px;
+    padding-right: 220px;
+  }
+
+  .ability__orange-btn {
+    margin-top: -3px;
+    margin-bottom: 20px;
+  }
+
+  .ability__second {
+    .flex-direction(@direction: column);
+    margin-left: 16px;
+    padding: 0;
+    margin-top: 0;
+
+  }
+
+  .ability__photo-block {
+    margin-right: 0;
+  }
+  .ability__mini-header {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: -10px;
+    margin-bottom: 3px;
+  }
+
+  .ability__photo2 {
+    width: 579px;
+    height: 423px;
+    padding-top: 50px;
+
+  }
+
 }
