@@ -1,4 +1,129 @@
 .menu__btn {
-  background-color: white;
+  background-color: transparent;
   border: none;
+}
+
+.menu {
+  .no-list();
+  .flex-block();
+  .flex-direction(@direction: column);
+  .justify-content(flex-start);
+  order: 2;
+  margin-top: 20px;
+  width: 220px;
+
+}
+
+.menu__item {
+  padding-left: 15px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+
+  a {
+  font-family: @second-font;
+  color: @gray;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  }
+  &:hover {
+  background-color: @light-gray;
+  }
+}
+
+.menu__outer {
+  order: 1;
+  width: 220px;
+  .flex-block();
+  .flex-direction(@direction: column);
+  .justify-content(flex-start);
+  margin-top: 31px;
+
+}
+
+.menu__outer-link {
+  font-family: @main-font-semi;
+  color: @dark;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  margin-left: 69px;
+}
+
+.menu__outer-btn {
+  margin-top: 25px;
+  width: 195px;
+  margin-left: 17px;
+}
+
+@media (min-width: @desktop-width) {
+  .menu {
+    .no-list();
+    .flex-block();
+    .flex-direction(@direction: row);
+    flex-wrap: nowrap;
+    .justify-content(flex-start);
+    order: 1;
+    width: 1200px;
+    margin-top: 0;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: @light-gray;
+
+
+  }
+
+  .menu__item {
+    width: 236px;
+    background-color: @light-gray;
+    padding-left: 75px;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-right: 75px;
+    border-left: 1px solid @middle-gray;
+    border-right: 1px solid @middle-gray;
+    border-collapse: collapse;
+
+
+    &:hover {
+      background-color: @white;
+    }
+
+    a {
+      font-family: @second-font;
+      color: @gray;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  .menu__outer {
+    position: absolute;
+    .flex-direction(@direction: row);
+    min-width: 500px;
+    top: 30px;
+right: -10px;
+  }
+
+  .menu__outer-btn {
+    margin-left: 28px;
+    margin-top: -11px;
+    width: 240px;
+  }
+
+  .menu__outer-link {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
 }
