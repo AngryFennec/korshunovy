@@ -5,6 +5,10 @@
   color: #3D2E29;
 }
 
+.price__image {
+  display: none;
+}
+
 .price__label {
   display: flex;
   flex-direction: column;
@@ -172,6 +176,13 @@
     padding-top: 10px;
   }
 
+  .price__area .price__legend {
+    width: 200px;
+  }
+  .price__range {
+    margin-top: 0;
+    margin-bottom: 68px;
+  }
   .price__label {
     margin-left: 20px;
     margin-bottom: 10px;
@@ -223,9 +234,49 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1920px) {
   .price {
     width: 1180px;
     padding-right: 300px;
+    padding-top: 52px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding-right: 380px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding-bottom: 25px;
+  }
+
+  .price__image {
+    position: absolute;
+    display: block;
+    left: 830px;
+    top: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .price__legend {
+    padding-left: 30px;
+    width: 175px;
+  }
+
+  .price__range {
+    margin-bottom: 48px;
+  }
+
+  .price__label {
+    margin-bottom: 0;
+  }
+
+  .price__legend--phone {
+    margin-top: 17px;
+  }
+
+  .price__phone {
+    margin-top: 16px;
+  }
+
+  .price__button {
+    margin-bottom: 15px;
   }
 }
