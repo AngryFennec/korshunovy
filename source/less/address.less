@@ -93,13 +93,36 @@
   .address__container {
     position: absolute;
     top: 0;
-    left: 205px;
+    left: 30px;
     min-height: 340px;
     width: 280px;
+    z-index: 20;
+    background-color: @white;
   }
 
   .address {
     width: @tablet-width;
     margin: 0 auto;
+    z-index: 20;
+    background-color: @white;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .address__container {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    min-height: 340px;
+    width: 280px;
+    z-index: 20;
+    background-color: @white;
+  }
+
+  .address {
+    width: @tablet-width;
+    margin: 0 auto;
+    z-index: 20;
+    background-color: @white;
+  }
 }
