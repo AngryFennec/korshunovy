@@ -58,16 +58,16 @@
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: @desktop-width) {
   .about-us {
-
-    padding-right: 310px;
+    width: 1200px;
   }
 
   .about-us__image {
     width: 950px;
     height: 417px;
     margin-top: -61px;
+    margin-left: -360px;
   }
 
   .about-us__header {
@@ -78,5 +78,9 @@
   .about-us__description {
     font-size: 25px;
     line-height: 30px;
+  }
+
+  .about-us__content {
+    padding-right: 30px;
   }
 }

@@ -135,17 +135,22 @@
 
   .main-header {
     min-height: 1158px;
-    width: @desktop-width;
+    min-width: @desktop-width;
+    max-width: 1920px;
+    width: 100%;
     margin: 0 auto;
     background-image: url("../images/upload/main-header-back-desk.jpg");
+    background-position: center;
     position: relative;
 
   &::before {
     content: "";
     position: absolute;
     top: 120px;
-    left: 750px;
+    left: 50%;
+    transform: translateX(-50%);
     background-image: url("../images/header-rect-desk.svg");
+    background-position: center;
     background-repeat: no-repeat;
     width: 500px;
     height: 500px;
