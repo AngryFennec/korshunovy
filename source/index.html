@@ -8,6 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <link href="styles/style.min.css" rel="stylesheet">
+
 </head>
 
 <body class="page">
@@ -189,8 +190,8 @@
             <input class="price__checkbox visually-hidden" type="checkbox" name="all-rooms" id="all-rooms">
             <label class="price__label" for="all-rooms">Мне нужны натяжные потолки на всю квартиру</label>
           </div>
-          <label class="price__legend price__legend--phone">Номер телефона</label>
-          <input class="price__phone" type="text" placeholder="+7(___) ___-__-__">
+          <label for="phone" class="price__legend price__legend--phone">Номер телефона</label>
+          <input id="phone" class="price__phone" type="text" placeholder="+7(___) ___-__-__">
           <button class="price__button button" type="submit">Рассчитать стоимость</button>
         </form>
       </section>
@@ -397,7 +398,7 @@
           <button type="button" class="feadback__close-button"></button>
         </div>
       </section>
-      <section class="feadback feadback--name">
+      <section class="feadback feadback--name visually-hidden">
         <div class="feadback__window">
           <p class="feadback__legend">Мы Вам перезвоним!</p>
           <form class="feadback__form">
@@ -409,9 +410,18 @@
         </div>
       </section>
   </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
   <script src="script/picturefill.min.js"></script>
   <script src="script/main.js"></script>
   <script src="script/range.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#phone').inputmask("+7 (999) 999-99-99");  //static mask
+      $('#user-phone').inputmask("+ (999) 999-99-99");  //static mask
+    });
+</script>
 </body>
 
 </html>
