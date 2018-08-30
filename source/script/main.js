@@ -82,3 +82,13 @@ for (var i = 0; i <= (button.length-1); i++) {
 closeButton.addEventListener ("click", function (evt) {
   hidden(evt, modal);
 });
+
+var moreButton = document.querySelector('.portfolio__button');
+var block3 = document.querySelector('.portfolio__block--3');
+var block4 = document.querySelector('.portfolio__block--4');
+
+moreButton.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  block3.classList.toggle('visually-hidden');
+  block4.classList.toggle('visually-hidden');
+});
